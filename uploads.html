@@ -12,7 +12,7 @@
     // Fetch uploaded files from Vercel API
     async function fetchFiles() {
       // Replace '/api/list-files' with your Vercel API route
-      const res = await fetch('/api/list-files');
+      const res = await fetch('https://kapswork-k7u4hvvyo-kapil-singh-chouhans-projects.vercel.app/api/list-files');
       const files = await res.json();
       const list = document.getElementById('fileList');
       list.innerHTML = '';
