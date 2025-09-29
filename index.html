@@ -68,6 +68,9 @@
 
     <script>
         // Upload images and show large preview
+        import { put } from "@vercel/blob";
+
+        const { url } = await put('articles/blob.txt', 'Hello World!', { access: 'public' });
         const fileInput = document.getElementById('fileInput');
         const imagesContainer = document.getElementById('imagesContainer');
 
